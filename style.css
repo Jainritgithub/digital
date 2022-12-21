@@ -1,0 +1,773 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: Cooper LtBt;
+    src: url(CooperLtBTWXXLight\ \(1\).ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* font-family: Cooper LtBt; */
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#section1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+#nav{
+    /* position: fixed; */
+    padding: 10px 40px;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#nav h2{
+    font-size: 30px;
+    font-weight: 100;
+    position: relative;
+    font-family: Cooper LtBt;
+}
+#nav h2::after{
+    content: "";
+    position: absolute;
+    right: -6%;
+    top: 65%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+#rnav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#rnav a{
+    text-decoration: none;
+    margin: 20px;
+    color: #000;
+    font-family: Cooper LtBt;
+}
+#rnav a:nth-last-child(1){
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid #000;
+    border-radius: 50px;
+}
+#rnav a:nth-last-child(1) h5>i{
+    padding: 2px;
+    font-size: 15px;
+}
+#rnav a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    -webkit-transition: left 0.7s ease;
+    -o-transition: left 0.7s ease;
+    transition: left 0.7s ease;
+
+}
+#rnav a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    font-size: 15px;
+    z-index: 1;
+}
+
+#rnav a:nth-last-child(1):hover #green{
+    left: 0;
+}
+#section1>h1{
+    position: relative;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-size: 5vw;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 99;
+    font-weight: 500;
+    font-family: Cooper LtBt;
+    
+}
+#section1>h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -4%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+}
+#section1>h4{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-size: 4vw;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 99;
+    font-size: 25px;
+    font-family: Cooper LtBt;
+}
+#section1 h4>i{
+    font-size: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 7vw;
+    height: 5vh;
+    margin-left: 20px;
+    border: 0.1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    /* background-color: springgreen; */
+    -webkit-transition: left 0.7s ease;
+    -o-transition: left 0.7s ease;
+    transition: left 0.7s ease;
+    position: absolute;
+    top: 50%;
+    right: -105%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+   
+}
+#section1 h4>i #hara:hover {
+    background-color: red;
+    left: 0;
+}
+
+#section1 img{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 370px;
+    height: 530px;
+}
+#image img{
+    position: absolute;
+    top: 34%;
+    left: 68%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 250px;
+    height: 210px;
+}
+#image2 img{
+    position: absolute;
+    top: 72%;
+    left: 83%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 280px;
+    height: 280px;
+}
+#img1{
+    -webkit-transition: margin 0.4s ease;
+    -o-transition: margin 0.4s ease;
+    transition: margin 0.4s ease; 
+}
+#img1:hover{
+    margin-top: -10px ;
+}
+#image img{
+    -webkit-transition: margin 0.4s ease;
+    -o-transition: margin 0.4s ease;
+    transition: margin 0.4s ease; 
+}
+#image img:hover{
+    margin-top: -10px ;
+}
+#image2 img{
+    -webkit-transition: margin 0.4s ease;
+    -o-transition: margin 0.4s ease;
+    transition: margin 0.4s ease; 
+}
+#image2 img:hover{
+    margin-top: -10px ;
+}
+
+#section2{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: #000;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+#section2 h4{
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    font-family: Cooper LtBt;
+}
+#section2 h4::before{
+    content: "";
+    position: absolute;
+    left: -3%;
+    top: 10%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: springgreen;
+    
+}
+#section2 h1{
+    width: 750px;
+    margin: 50px;
+    position: relative;
+    font-family: Cooper LtBt;
+    line-height: 60px;
+    font-weight: 100;
+    font-size: 40px;
+}
+#section2 h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 37%;
+    width: 180px;
+    height: 65px;
+    /* background-color: red; */
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+}
+#section2 #about-us{
+    /* background-color: red; */
+    width: 20%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#about-us h5{
+    font-size: 19px;
+    white-space: nowrap;
+    font-family: Cooper LtBt;
+}
+#about-us #haradiv{
+    position: relative;
+    width: 30%;
+    height: 40px;
+    /* background-color: blue; */
+    margin-left: 20px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+#haradiv img{
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+#section3{
+    width: 100%;
+    height: 130%;
+    /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Cooper LtBt;
+}
+#left{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    background-color: #fff;
+}
+#left img {
+    width: 21%;
+}
+#left .b{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 21%;
+}
+#left .c{
+    width: 49%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+}
+#left .d{
+    width: 65%;
+    position: absolute;
+    top: 62%;
+    left: 58%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+#right{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#right h1{
+    position: relative;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-size: 55px;
+    font-weight: 500;
+}
+#right h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: 43%;
+    left: 39%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+}
+
+#right p{
+    width: 79%;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    /* background-color: red; */
+    font-size: 20px;
+    line-height: 170%;
+} 
+
+#right h3{
+    width: 80%;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+}
+#right h3 #button h2{
+    position: relative;
+    padding: 8px 10px;
+    /* background-color: red; */
+    width: 130%;
+    height: 6vh;
+    margin-left: 10%;
+    font-weight: 100;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+}
+
+#right h3 #button h2 img{
+    font-size: 50%;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    margin-left: 5%;
+}
+
+#section4{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: Cooper LtBt;
+}
+
+#upper{
+    width: 100%;
+    height: 25%;
+    /* background-color: red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#upper h1{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    font-size: 50px;
+    font-weight: 500;
+    /* background-color: grey; */
+}
+#upper h1::after{
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    left: 17%;
+    width: 145px;
+    height: 90px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+}
+#bottom{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: #fff;
+}
+#bottom .a img{
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+#bottom .b img{
+    position: absolute;
+    top: 12%;
+    left: 33%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+#bottom .c img{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .d img{
+    position: absolute;
+    top: 12%;
+    left: 66%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .e img{
+    position: absolute;
+    top: 12%;
+    left: 83%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .f img{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .g img{
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .h img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .i img{
+    position: absolute;
+    top: 40%;
+    left: 66%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .j img{
+    position: absolute;
+    top: 40%;
+    left: 83%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .k img{
+    position: absolute;
+    top: 67%;
+    left: 15%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+#bottom .l img{
+    position: absolute;
+    top: 67%;
+    left: 33%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .m img{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .n img{
+    position: absolute;
+    top: 67%;
+    left: 66%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom .o img{
+    position: absolute;
+    top: 67%;
+    left: 83%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 8%;
+}
+
+#bottom h4{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-weight: 600;
+}
+
+#section5{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .swiper-slide img {
+    width: 70px;
+    height: 70px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .swiper-slide h1{
+    /* background-color: red; */
+    width: 50%;
+    font-size: 50px;
+    margin: 50px;
+    font-weight: 100;
+  }
+
+  .swiper-slide h4{
+    position: relative;
+    /* background-color: red; */
+    /* width: 60%; */
+    font-size: 18px;
+    margin: 7px;
+    font-weight: 500;
+
+  }
+  .swiper-slide>h4::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -15%;
+    top: 30%;
+    background-color: springgreen;
+    border-radius: 50%;
+  }
+  .swiper-slide h6{
+    /* background-color: red; */
+    width: 60%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    /* margin: 7px; */
+    font-weight: 100;
+  }
